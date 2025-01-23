@@ -2,6 +2,7 @@ import React from "react";
 import Signup from "./auth/signup.js";
 import Signin from "./auth/signin.js";
 import LandingPage from "./posts/Landing.js";
+import Signout from './components/header.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Signup />}></Route>
         <Route path="/signin" element={<Signin />}></Route>
         <Route path="/post" element={<LandingPage />}></Route>
+        <Route path="/signout" element={<Signout />}></Route>
       </Routes>
     </Router>
   );

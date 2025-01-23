@@ -28,7 +28,6 @@ export default () => {
     await doRequest();
   };
 
-  
 
   return (
     <form onSubmit={ onSubmit }>
