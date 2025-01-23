@@ -4,7 +4,7 @@ import useRequest from '../../hooks/use-request';
 
 export default () => {
   const { doRequest } = useRequest({
-    url: 'http://localhost:4000/api/user/signout',
+    url: 'https://blog-post-app-backend-zocg.onrender.com/api/user/signout',
     method: 'post',
     body: {},
     onSuccess: () => Router.push('/')
