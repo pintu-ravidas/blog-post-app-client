@@ -7,7 +7,7 @@ const PostList = () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
-    const res = await axios.get("http://localhost:4000/api/posts");
+    const res = await axios.get("https://blog-post-app-backend-zocg.onrender.com/api/posts");
 
     setPosts(res.data);
 
