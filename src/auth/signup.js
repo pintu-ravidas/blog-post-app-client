@@ -11,7 +11,7 @@ export default () => {
 
   
   const { doRequest, errors } = useRequest({
-    url: 'http://localhost:4000/api/user/signup',
+    url: 'https://blog-post-app-backend-zocg.onrender.com/api/user/signup',
     method: 'post',
     body: {
       email,
