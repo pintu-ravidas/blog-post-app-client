@@ -7,7 +7,7 @@ const PostCreate = () => {
     const navigate = useNavigate();  
     const [title, setTitle] = useState('');
     const { doRequest, errors } = useRequest({
-      url: 'http://localhost:4000/api/posts/create',
+      url: 'https://blog-post-app-backend-zocg.onrender.com/api/posts/create',
       method: 'post',
       body: {
         title
