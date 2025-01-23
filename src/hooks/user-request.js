@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-axios.defaults.baseURL='http://localhost:4000';
+axios.defaults.baseURL='https://blog-post-app-backend-zocg.onrender.com';
 axios.defaults.withCredentials=true;
 
 export default ({ url, method, body, onSuccess }) => {
