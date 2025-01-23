@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export default ({ currentUser }) => {
    const navigate = useNavigate();
     const { doRequest, errors } = useRequest({
-      url: 'http://localhost:4000/api/user/signout',
+      url: 'https://blog-post-app-backend-zocg.onrender.com/api/user/signout',
       method: 'post',
       onSuccess: () => navigate("/signin")
     });  
